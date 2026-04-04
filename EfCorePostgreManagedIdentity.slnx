@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Company.AppOne/Company.AppOne.csproj" />
+    <Project Path="samples/Company.AppTwo/Company.AppTwo.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Company.Common.EfCore/Company.Common.EfCore.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Company.AppOne.Tests/Company.AppOne.Tests.csproj" />
+    <Project Path="test/Company.AppTwo.Tests/Company.AppTwo.Tests.csproj" />
+    <Project Path="test/Company.Common.EfCore.Tests/Company.Common.EfCore.Tests.csproj" />
+  </Folder>
+</Solution>
