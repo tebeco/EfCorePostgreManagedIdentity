@@ -20,6 +20,7 @@
     <File Path="src/Directory.Build.targets" />
     <Project Path="src/Company.Common.Api/Company.Common.Api.csproj" />
     <Project Path="src/Company.Common.EfCore/Company.Common.EfCore.csproj" />
+    <Project Path="src/Company.Common.Monitoring/Company.Common.Monitoring.csproj" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="test/Company.AppOne.Tests/Company.AppOne.Tests.csproj" />
