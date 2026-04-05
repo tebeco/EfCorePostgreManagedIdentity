@@ -1,6 +1,5 @@
 using Company.AppOne.Db;
 using Company.Common.Api;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,5 +1,9 @@
 <Project>
   <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
 
-  <Import Project="../Directory.Build.targets" />
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+    <Import Project="../Directory.Build.targets" />
 </Project>

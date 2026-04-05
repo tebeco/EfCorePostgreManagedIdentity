@@ -26,6 +26,16 @@ public static class DbContextHostApplicationBuilderExtensions
 
                     options.AzureCredentials?.Scope ??= $"https://ossrdbms-aad.database.windows.net/.default";
                     options.AzureCredentials?.ClientId = string.IsNullOrEmpty(options.AzureCredentials?.ClientId) ? null : options.AzureCredentials.ClientId;
+
+                    if (options.AzureCredentials?.SuccessRefreshInterval != null && options.AzureCredentials?.SuccessRefreshInterval == TimeSpan.Zero)
+                    {
+                        options.AzureCredentials?.SuccessRefreshInterval = TimeSpan.FromMinutes(15);
+                    }
+
+                    if (options.AzureCredentials?.FailureRefreshInterval != null && options.AzureCredentials?.FailureRefreshInterval == TimeSpan.Zero)
+                    {
+                        options.AzureCredentials?.FailureRefreshInterval = TimeSpan.FromSeconds(5);
+                    }
                 })
                 .Validate(options => !string.IsNullOrWhiteSpace(options.Host), $"{TDbContextOptions.SectionName}:{nameof(ICommonDbContextOptions.Host)} cannot be null or whitespace")
                 .Validate(options => !string.IsNullOrWhiteSpace(options.Database), $"{TDbContextOptions.SectionName}:{nameof(ICommonDbContextOptions.Database)} cannot be null or whitespace")

@@ -2,6 +2,8 @@
   <Folder Name="/.Solution Items/">
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
+    <File Path="create-cluster.ps1" />
+    <File Path="create-cluster.sh" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
     <File Path="Directory.Packages.props" />
