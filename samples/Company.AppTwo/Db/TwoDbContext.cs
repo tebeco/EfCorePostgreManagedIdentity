@@ -1,5 +1,4 @@
 using Company.AppTwo.Db.Entities;
-
 using Microsoft.EntityFrameworkCore;
 
 namespace Company.AppTwo.Db;

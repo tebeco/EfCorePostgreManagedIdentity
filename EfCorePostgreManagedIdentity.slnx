@@ -1,9 +1,23 @@
 <Solution>
+  <Folder Name="/.Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="dotnet-tools.json" />
+    <File Path="global.json" />
+    <File Path="nuget.config" />
+  </Folder>
   <Folder Name="/samples/">
+    <File Path="samples/Directory.Build.props" />
+    <File Path="samples/Directory.Build.targets" />
     <Project Path="samples/Company.AppOne/Company.AppOne.csproj" />
     <Project Path="samples/Company.AppTwo/Company.AppTwo.csproj" />
   </Folder>
   <Folder Name="/src/">
+    <File Path="src/Directory.Build.props" />
+    <File Path="src/Directory.Build.targets" />
     <Project Path="src/Company.Common.EfCore/Company.Common.EfCore.csproj" />
   </Folder>
   <Folder Name="/test/">

@@ -12,11 +12,11 @@ app.UseHttpsRedirection();
 app.MapOpenApi();
 app.MapScalarApiReference();
 
-app.MapGet("/bars", () => TypedResults.Ok());
-app.MapGet("/bars/{id}", () => TypedResults.Ok());
-app.MapPost("/bars", () => TypedResults.Ok());
-app.MapPut("/bars/{id}", () => TypedResults.Ok());
-app.MapDelete("/bars/{id}", () => TypedResults.Ok());
+// app.MapGet("/bars", () => TypedResults.Ok());
+// app.MapGet("/bars/{id}", () => TypedResults.Ok());
+// app.MapPost("/bars", () => TypedResults.Ok());
+// app.MapPut("/bars/{id}", () => TypedResults.Ok());
+// app.MapDelete("/bars/{id}", () => TypedResults.Ok());
 
 app.Run();
 
