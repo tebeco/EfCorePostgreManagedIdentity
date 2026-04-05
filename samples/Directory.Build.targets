@@ -1,6 +1,10 @@
 <Project>
   <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Company.Common.Api\Company.Common.Api.csproj" />
+  </ItemGroup>
+  
   <Import Project="../Directory.Build.targets" />
 
 </Project>

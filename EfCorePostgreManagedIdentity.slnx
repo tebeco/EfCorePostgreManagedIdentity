@@ -18,6 +18,7 @@
   <Folder Name="/src/">
     <File Path="src/Directory.Build.props" />
     <File Path="src/Directory.Build.targets" />
+    <Project Path="src/Company.Common.Api/Company.Common.Api.csproj" />
     <Project Path="src/Company.Common.EfCore/Company.Common.EfCore.csproj" />
   </Folder>
   <Folder Name="/test/">

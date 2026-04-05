@@ -1,16 +1,13 @@
-using Scalar.AspNetCore;
+using Company.Common.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOpenApi(options => options.AddScalarTransformers());
-builder.Services.Configure<ScalarOptions>(options => options.DisableAgent());
+builder.AddCommonApi();
 
 var app = builder.Build();
-
 app.UseHttpsRedirection();
 
-app.MapOpenApi();
-app.MapScalarApiReference();
+app.MapCommonEndpoints();
 
 // app.MapGet("/bars", () => TypedResults.Ok());
 // app.MapGet("/bars/{id}", () => TypedResults.Ok());

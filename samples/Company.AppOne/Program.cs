@@ -1,21 +1,17 @@
 using Company.AppOne.Db;
 using Company.Common.EfCore;
+using Company.Common.Api;
 using Microsoft.EntityFrameworkCore;
-using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOpenApi(options => options.AddScalarTransformers());
-builder.Services.Configure<ScalarOptions>(options => options.DisableAgent());
-
+builder.AddCommonApi();
 builder.AddOneDbContext();
 
 var app = builder.Build();
-
 app.UseHttpsRedirection();
 
-app.MapOpenApi();
-app.MapScalarApiReference();
+app.MapCommonEndpoints();
 
 // app.MapGet("/foos", () => TypedResults.Ok());
 // app.MapGet("/foos/{id}", () => TypedResults.Ok());
