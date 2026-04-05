@@ -1,8 +1,10 @@
+using Company.AppTwo.Db;
 using Company.Common.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddCommonApi();
+builder.AddTwoDbContext();
 
 var app = builder.Build();
 app.UseHttpsRedirection();

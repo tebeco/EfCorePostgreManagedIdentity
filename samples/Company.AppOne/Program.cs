@@ -1,5 +1,4 @@
 using Company.AppOne.Db;
-using Company.Common.EfCore;
 using Company.Common.Api;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,14 +1,6 @@
-using Azure.Core;
-using Azure.Identity;
-using Company.AppOne.Db;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Npgsql;
+using Company.Common.EfCore;
 
-namespace Company.Common.EfCore;
+namespace Company.AppOne.Db;
 
 public static class OneDbContextHostApplicationBuilderExtensions
 {

@@ -3,6 +3,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Company.Common.Api\Company.Common.Api.csproj" />
+    <ProjectReference Include="..\..\src\Company.Common.EfCore\Company.Common.EfCore.csproj" />
   </ItemGroup>
   
   <Import Project="../Directory.Build.targets" />
